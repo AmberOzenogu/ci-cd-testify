@@ -1,11 +1,11 @@
 
 name: Github Actions Demo
-on: [push]
+on: [ push ]
 jobs:
- Explore-Github-Actions:
-  runs-on:
-  steps:
-   - uses: actions/checkout@v2
-   - run: echo "The job was automatically triggered by a ${{ github.event-name }} event."
-   - run: python main.py
+Tests:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v2
+- run: echo "The job was automatically triggered by a ${{ github.event-name }} event."
+- run: python main.py
 
