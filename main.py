@@ -1,3 +1,4 @@
 
-print("Hello World")
-print("This is an update")
+def addition(x, y):
+    """Return the sum of two numbers."""
+    return x + y
